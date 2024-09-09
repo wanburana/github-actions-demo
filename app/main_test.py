@@ -9,7 +9,7 @@ class TestMain(unittest.TestCase):
         self.assertEqual(random_string_reversed, return_backwards_string(random_string))
 
     def test_get_env(self):
-        self.assertEqual(os.environ.get("MODE"), get_mode())
+        self.assertEqual("dev", get_mode())
 
 if __name__ == "__main__":
     unittest.main()
